@@ -1,0 +1,6 @@
+---
+- name: Maven Build on Jenkins Server
+  host: localhost
+  task:
+          - name: run Maven Build
+            shell: mvn clean install

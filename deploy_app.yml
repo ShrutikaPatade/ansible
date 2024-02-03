@@ -1,0 +1,10 @@
+---
+- name: Deploy Application to Web Container
+  hosts: web_containers
+  tasks:
+          - name: Copy WAR file to web container
+            copy:
+                    src:
+                    dest:
+          - name: Restart Web Container
+            shell:
